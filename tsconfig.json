@@ -4,13 +4,13 @@
 		"module": "ES2020", // what type of MODULE SYNTAX is supported for OUTPUT? // using ES2020 instead of Commojs as using import.meta
 		"esModuleInterop": true,
 		"outDir": "./dist_server",
-		"rootDir": "./src/server",
+		"rootDir": "./src/",
 		// "lib": ["ES2020"], // OUTPUT can use functions and properties introduced in ES2020 or earlier
 
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
 	},
-	"include": ["./src/server"],
+	"include": ["./src/"],
 	"exclude": ["node_modules","src/client"]
 }

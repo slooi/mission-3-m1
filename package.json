@@ -20,6 +20,7 @@
   "main": "jest.config.js",
   "scripts": {
     "dev-server": "tsx src/index",
+    "test": "jest",
     "dev-test": "jest --watchAll --verbose --runInBand"
   },
   "keywords": [],

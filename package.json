@@ -3,6 +3,7 @@
     "@types/express": "^4.17.21",
     "@types/jest": "^29.5.8",
     "@types/supertest": "^2.0.16",
+    "concurrently": "^8.2.2",
     "jest": "^29.7.0",
     "supertest": "^6.3.3",
     "ts-jest": "^29.1.1",
@@ -19,6 +20,8 @@
   "version": "1.0.0",
   "main": "jest.config.js",
   "scripts": {
+    "start": "node dist_server/app.js",
+    "dev-prod1": "concurrently \"tsc --watch\" \"nodemon ./dist_server/app\"",
     "dev-server": "tsx src/index",
     "build": "tsc",
     "test": "jest",

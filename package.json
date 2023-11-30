@@ -22,6 +22,7 @@
   "scripts": {
     "start": "node dist_server/app.js",
     "dev-prod1": "concurrently \"tsc --watch\" \"nodemon ./dist_server/app\"",
+    "dev-prod2": "tsc --watch",
     "dev-server": "tsx src/index",
     "build": "tsc",
     "test": "jest",

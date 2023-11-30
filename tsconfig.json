@@ -5,11 +5,14 @@
 		"esModuleInterop": true,
 		"outDir": "./dist_server",
 		"rootDir": "./src/",
+		"moduleResolution": "Bundler",
 		// "lib": ["ES2020"], // OUTPUT can use functions and properties introduced in ES2020 or earlier
 
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
+		"noUnusedLocals": false,
+		"noUnusedParameters": false,
 	},
 	"include": ["./src/"],
 	"exclude": ["node_modules","src/client"]
